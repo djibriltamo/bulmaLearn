@@ -6,7 +6,7 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-5">
-            <h2 class="title is-4 has-text-centered">Inscription</h2>
+            <h2 class="title is-4 has-text-centered"><b>INSCRIPTION</b></h2>
 
                 <form action="{{ route('auth.register') }}" method="POST">
                     @csrf

@@ -43,7 +43,7 @@
 
                         <div class="field">
                             <div class="control">
-                                <button class="button is-success is-fullwidth">Modifier un compte</button>
+                                <button class="button is-success is-fullwidth">Modifier son compte</button>
                             </div>
                         </div>
                     </form>

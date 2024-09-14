@@ -6,7 +6,8 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-5">
-            <h2 class="title is-4 has-text-centered">Connexion</h2>
+            <h2 class="title is-4 has-text-centered"><b>CONNEXION</b></h2>
+            
                 <form action="{{ route('auth.login') }}" method="POST">
                     @csrf
 
@@ -63,8 +64,8 @@
                     <!-- Forgot Password & Already Registered -->
                     <div class="field has-text-centered">
                         <p>
-                            <a href="/forgot-password">Mot de passe oublié?</a> | 
-                            <a href="{{ route('auth.register') }}">Déjà inscris?</a>
+                            <a href="">Mot de passe oublié?</a> | 
+                            <a href="{{ route('auth.register') }}">Pas de compte ? Alors inscrivez-vous ici</a>
                         </p>
                     </div>
                 </form>

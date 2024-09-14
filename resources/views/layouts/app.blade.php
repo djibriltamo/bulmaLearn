@@ -14,7 +14,7 @@
 
             @auth
                 <div class="navbar-start tabs is-large">
-                    <a class="navbar-item" href="URL::to('dashboard')"> Tableau de bord </a>
+                    <a class="navbar-item" href="{{ URL::to('dashboard') }}"> Tableau de bord </a>
                 </div>
 
                 <div class="tabs is-centered is-large">
@@ -31,7 +31,7 @@
             <div class="navbar-item">
     
             @guest
-                <div class="field is-grouped">
+                {{-- <div class="field is-grouped">
                     <p class="control">
                         <a
                             class="button button is-link"
@@ -45,11 +45,11 @@
                         <span>S'inscrire</span>
                     </a>
                     </p>
-                </div>
-                </div>
+                </div> --}}
+            </div>
             @else
                 <div class="field is-grouped">
-                    <p class="control">
+                    <p class="control mt-4 mr-6">
                         <span><b>{{ auth()->user()->name}}</b></span>
                     </p>
 

@@ -16,8 +16,7 @@
             </div>
         @endif
 
-
-        
+        <table class="table-container">
             <table class="table is-striped is-fullwidth">
                 <thead>
                     <tr>
@@ -50,7 +49,7 @@
                     
                 </tbody>
             </table>
-       
+        </table>
         
     </div>
 

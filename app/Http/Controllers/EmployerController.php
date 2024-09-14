@@ -124,7 +124,7 @@ class EmployerController extends Controller
      */
     public function destroy(string $id)
     {
-        $employers = Site::findOrFail($id);
+        $employers = Employer::findOrFail($id);
         $employers->delete();
 
         return redirect()->back()->with('error', 'Employé(e) supprimé avec succès');

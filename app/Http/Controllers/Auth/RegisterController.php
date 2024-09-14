@@ -24,7 +24,7 @@ class RegisterController extends Controller
 
         $user->save();
 
-        return redirect()->route('dashboard')->with('success', 'Votre inscription a été effectuée avec succès');
+        return redirect()->intended('dashboard')->with('success', 'Votre inscription a été effectuée avec succès');
     }
 
     public function index()

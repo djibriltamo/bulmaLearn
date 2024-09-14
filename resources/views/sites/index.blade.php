@@ -4,13 +4,13 @@
     <div class="container mt-4">
         @if(Session::has('error'))
             <div class="notification is-danger is-light">
-                <p class="help is-danger">
+                <p class="help is-danger title is-4">
                     <strong>{{ Session::get('error') }}</strong>
                 </p>
             </div>
         @else
             <div class="notification is-success is-light">
-                <p class="help is-success">
+                <p class="help is-success title is-4">
                     <strong>{{ Session::get('success') }}</strong>
                 </p>
             </div>
@@ -18,14 +18,12 @@
 
         <div class="field is-grouped">
             <form method="GET" action="{{ route('sites.index') }}">
-                    <div class="control">
+                    <div class="control mb-1">
                         <input class="input" type="text" placeholder="Rechercher..." value="{{ request('name') }}">
                     </div>
                     <div class="control">
                         <button class="button is-info">
-                            <a>
-                                Rechercher
-                            </a>
+                            Rechercher
                         </button>
                     </div>
             </form>
